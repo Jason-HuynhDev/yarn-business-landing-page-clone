@@ -12,7 +12,7 @@
 }
 
 .background-img {
-    background-image: url('/imgs/pexels-andrea-piacquadio-3769010.jpg');
+    background-image: url('pexels-andrea-piacquadio-3769010.jpg');
     z-index: -1;
     position: fixed;
     background-size: cover;
@@ -81,7 +81,7 @@
 .hero {
     width: auto;
     height: 65vh;
-    background-image: url('../imgs/pexels-joel-gundi-10432271.jpg');
+    background-image: url('pexels-joel-gundi-10432271.jpg');
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -294,7 +294,7 @@
 .customer-div {
     width: 100%;
     min-height: 40vh;
-    background-image: url('../imgs/pexels-anastasia-zhenina-5235720.jpg');
+    background-image: url('pexels-anastasia-zhenina-5235720.jpg');
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
