@@ -12,7 +12,7 @@
 }
 
 .background-img {
-    background-image: url('imgs/pexels-andrea-piacquadio-3769010.JPG');
+    background-image: url('/imgs/pexels-andrea-piacquadio-3769010.jpg');
     z-index: -1;
     position: fixed;
     background-size: cover;
@@ -81,7 +81,7 @@
 .hero {
     width: auto;
     height: 65vh;
-    background-image: url('imgs/pexels-joel-gundi-10432271.JPG');
+    background-image: url('../imgs/pexels-joel-gundi-10432271.jpg');
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
