@@ -11,8 +11,8 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-.background-img {
-    background-image: url('/imgs/pexels-andrea-piacquadio-3769010.jpg');
+.background-img img{
+    /* background-image: url('/imgs/pexels-andrea-piacquadio-3769010.jpg'); */
     z-index: -1;
     position: fixed;
     background-size: cover;
