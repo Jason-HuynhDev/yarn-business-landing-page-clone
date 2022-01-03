@@ -1,0 +1,464 @@
+:root {
+    --h2-fs: 2.5rem;
+    --p-blurb-fs: 1.5rem;
+    --padding-fs: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.background-img {
+    background-image: url('../imgs/pexels-andrea-piacquadio-3769010.jpg');
+    z-index: -1;
+    position: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    padding: 0 15vw;
+    align-items: center;
+    background-color: #464245;
+}
+
+.brand-name {
+    font-size: 2.6rem;
+    background: linear-gradient(90deg, #f58080,#ffe080, #4cc9b7, #ea68c4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.navbar-links ul {
+    display: flex;
+}
+.navbar-links li {
+    list-style: none;
+    padding: 1rem 0
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    font-size: 1.3rem;
+}
+
+.navbar-links li:hover {
+    background-color: #ffc400;
+}
+
+.brand-name, button, a {
+    cursor: pointer;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+/* hero section */
+.hero {
+    width: auto;
+    height: 65vh;
+    background-image: url('../imgs/pexels-joel-gundi-10432271.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.hero-blurb-background {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    max-width: 22rem;
+}
+
+.hero-blurb {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-fs);
+}
+
+.hero-blurb h2 {
+    font-size: var(--h2-fs);
+    padding-bottom: 1rem;
+}
+
+.hero-blurb p {
+    font-size: var(--p-blurb-fs);
+}
+
+/* info block */
+
+.info-block-container {
+    min-height: 140vh;
+    background-color: white;
+}
+
+.info-block-colored {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vh 6vw;
+}
+
+.info-block {
+    max-width: 24rem;
+    padding-top: 4vh;
+    margin: 1rem;
+}
+
+.info-block-heading {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: white;
+}
+
+.info-block-heading h2 {
+    text-align: right;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.first {
+   background-color: #58c56f; 
+}
+
+.second {
+    background-color: #ff5d8f;
+}
+
+.third {
+    background-color: #338ad1;
+}
+
+.fourth {
+    background-color: #ffc400;
+}
+
+.info-block-heading p {
+    font-size: 1.4rem;
+} 
+
+.info-block-paragraph {
+    min-height: 15vh;
+    padding: 1rem 0;
+}
+
+.info-block button {
+    width: 100%;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: .5rem;
+   
+}
+
+.read-me-btn:hover {
+    background-color: #ef2e46;
+}
+/* Welcome section */
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10vw 4vh;
+    line-height: 1.8;
+}
+
+.welcome h3 {
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+.welcome-img {
+    max-width: 60vw;
+    max-height: 70vh;
+    padding: 4vh 0;
+}
+
+.welcome h4 {
+    color: #ef2e46;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 1vh;
+}
+
+/* newsletter */
+.newsletter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+.newsletter-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;
+    width: auto;
+    padding: 2rem 4rem;
+    background: #f4f4f4;
+    color: #ef2e46;
+    font-size: 1.5rem;
+}
+
+.newsletter-input-container input {
+    outline: none;
+    text-align: start;
+    margin: 0 .6rem 0 1rem;
+    padding: 1rem 10vw 1rem 1rem;
+}
+
+.newsletter-input-container button {
+    border: 1px solid #ef2e46;
+    background-color: #ef2e46;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+/* events */
+
+.events {
+    background-color: white;
+    min-height: 55vh;
+    padding-top: 8vh;
+}
+
+.events h3, .header-paragraph {
+    text-align: center
+}
+.events .header-paragraph {
+    padding: 1vh 15vw 8vh 15vw;
+}
+
+.events-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.event-info-container {
+    display: grid;
+    grid-template-columns: 12rem 15rem;
+    padding: 1rem;
+    
+}
+
+.event-info-container .blurb {
+    text-align: start;
+}
+
+.event-day {
+    border: 1px solid #ef2e46;
+    border-radius: 15px;
+    max-width: 10rem;
+    max-height: 10rem;
+    color: #ef2e46;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* customer reviews */
+
+.customer-div {
+    width: 100%;
+    min-height: 40vh;
+    background-image: url('../imgs/pexels-anastasia-zhenina-5235720.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer-title {
+    padding: 5rem 0 2rem 5rem;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.carousel {
+    height: 10rem;
+    width: 80vw;
+    overflow: hidden;
+}
+.reviews-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.8s ease-in-out;
+}
+
+/* set min-width on .customer-review to fix issue with container stretching horizontally */
+.customer-review {
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    min-width: 16rem;
+    min-height: 8rem;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: start;
+}
+
+/* footer */
+
+footer {
+    background-color: #1d1d1d;
+    min-height: 30vh;
+    display: flex;
+    padding: 2rem;
+}
+footer div {
+    min-width: 20vw;
+    padding: 1rem;
+}
+footer h4 {
+    color: #ffc400;
+}
+
+footer p {
+    color: white;
+    padding: 1rem 0;
+    list-style: none;
+}
+
+footer ul {
+    color: white;
+    padding: 1rem 0;
+    list-style: none;
+}
+
+footer ul li {
+    border-bottom: .5px solid rgb(94, 92, 92, 0.4);
+    padding: .5rem 0;
+}
+/* mobile view */
+@media (max-width: 840px) {
+    :root {
+        --h2-fs: 1.2rem;
+        --p-blurb-fs: .6rem;
+        --padding-fs: 1rem;
+    }
+    
+    .hero {
+        height: 35vh;
+    }
+
+    .brand-name {
+        font-size: 2rem;
+    }
+
+    .newsletter-input-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        padding: 1rem;
+        align-items: center;
+        background: #f4f4f4;
+        color: #ef2e46;
+        font-size: 1.5rem;
+    }
+
+    .newsletter-input-container button {
+        margin-top: 1rem;
+    }
+
+    .toggle-button {
+        top: 2rem;
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        margin-top: 25.2rem;
+        width: 100%;
+        background-color: white;
+        z-index: 2;
+    }
+
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+        color: #ffc400;
+    }
+
+    .navbar-links li a:hover {
+        color: white;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    /* info blocks */
+    .info-block-colored {
+        flex-direction: column;
+    }
+
+    /* events */
+    .events-container {
+        flex-direction: column;
+    }
+
+    .event-info-container {
+        display: flex;
+    }
+    
+    .event-day {
+        padding: 0 .5rem;
+        margin-right: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
